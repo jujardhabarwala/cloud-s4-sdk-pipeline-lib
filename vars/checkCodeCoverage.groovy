@@ -25,8 +25,8 @@ def call(Map parameters = [:]) {
             jacoco execPattern: "${s4SdkGlobals.coverageReports}/**/*.exec",
                 exclusionPattern: "${jacocoExclusionPattern}",
                 changeBuildStatus: true,
-                maximumLineCoverage: '70',
-                minimumLineCoverage: '65'
+                maximumLineCoverage: '30',
+                minimumLineCoverage: '20'
         }
     }
 }
